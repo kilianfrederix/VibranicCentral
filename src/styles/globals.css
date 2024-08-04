@@ -73,7 +73,5 @@
   body {
     @apply bg-background text-foreground;
   }
-  .theme-gradient-lime {
-    @apply bg-gradient-to-r from-teal-100 from-30% via-green-200 via-60% to-green-300 to-80%;
-  }
+  
 }
