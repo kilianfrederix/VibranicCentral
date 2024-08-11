@@ -4,7 +4,7 @@ import { PropsWithChildren } from 'react';
 import type { Metadata } from 'next';
 
 import { Footer } from '@/components/footer';
-import { Sidebar } from '@/components/sidebar';
+import Sidebar from '@/components/sidebar';
 import { Toaster } from '@/components/ui/toaster';
 import { siteConfig } from '@/lib/constant';
 import { fonts } from '@/lib/fonts';
@@ -43,8 +43,6 @@ export const metadata: Metadata = {
     images: '/opengraph-image.png',
   },
 };
-
-import Sidebar from '@/components/sidebar';
 import Providers from '@/lib/providers';
 
 const RootLayout = ({ children }: PropsWithChildren) => {
