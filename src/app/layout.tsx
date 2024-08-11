@@ -4,6 +4,7 @@ import { PropsWithChildren } from 'react';
 import type { Metadata } from 'next';
 
 import { Footer } from '@/components/footer';
+import Navbar from '@/components/navbar/navbar';
 import Sidebar from '@/components/sidebar';
 import { Toaster } from '@/components/ui/toaster';
 import { siteConfig } from '@/lib/constant';
@@ -50,10 +51,11 @@ const RootLayout = ({ children }: PropsWithChildren) => {
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          ' flex min-h-screen grow flex-col justify-between overflow-y-auto font-sans',
+          ' flex min-h-screen grow flex-col justify-between overflow-y-auto bg-gradient-to-r from-blue-300 to-blue-300 font-sans',
           fonts
         )}
       >
+        <Navbar />
         <Providers>
           <div className="flex grow">{children}</div>
           <Footer />

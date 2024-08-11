@@ -1,27 +1,35 @@
+import React from 'react';
+import { GearIcon } from '@radix-ui/react-icons';
+import Image from 'next/image';
 import Link from 'next/link';
-import { getServerSession } from 'next-auth';
 
-import { authOptions } from '@/app/api/auth/[...nextauth]/auth-options';
-import { SignInButton } from '@/components/navbar/sign-in-button';
-import { ThemeToggle } from '@/components/navbar/theme-toggle';
-import { UserDropdown } from '@/components/navbar/user-dropdown';
-import Image from 'next/image'
-import { Icons } from '@/components/icons';
-
-export const Navbar = async () => {
-  const session = await getServerSession(authOptions);
-
+const Navbar = async () => {
   return (
-    <header className="w-full theme-gradient-lime">
-      <div className="container ml-14 h-16 w-full flex flex-row flex-nowrap pt-4 pb-4">
-        <div className="basis-1/2 justify-items-start pt-1">
-          <div className='place-self-start text-xl font-bold leading-tight tracking-tighter'>Dashboard</div>
-        </div>
-
-        <div className="basis-1/4">
-
+    <header className="w-full bg-white drop-shadow-xl">
+      <div className="h-13 py-2 pr-4">
+        <div className="grid w-full grid-cols-3 justify-center ">
+          <div></div>{' '}
+          {/* this is a spacer to place the logo in the middle of the screen */}
+          <div className="flex w-[100%] flex-row justify-center">
+            <Image
+              src="/white-large-logo.png"
+              alt="Logo"
+              width={170}
+              height={10}
+            />
+          </div>
+          <div className="flex flex-row justify-end">
+            <Link
+              href="/settings"
+              className="flex cursor-pointer items-center space-x-2 rounded-md"
+            >
+              <GearIcon className=" size-[20px]" />
+            </Link>
+          </div>
         </div>
       </div>
     </header>
   );
 };
+
+export default Navbar;
