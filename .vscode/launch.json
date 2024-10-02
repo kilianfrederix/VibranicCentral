@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Next.js: Preview",
+        "type": "node-terminal",
+        "request": "launch",
+        "command": "npm run preview",
+      },
+      {
+        "name": "Next.js: debug",
+        "type": "node-terminal",
+        "request": "launch",
+        "command": "npm run dev",
+        "serverReadyAction": {
+          "pattern": "Started server on .+, url: (https?://.+)",
+          "uriFormat": "%s",
+          "action": "debugWithChrome",
+        }
+      },
+      {
+        "name": "Next.js: Build",
+        "type": "node-terminal",
+        "request": "launch",
+        "command": "npm run build",
+        "serverReadyAction": {
+          "pattern": "Started server on .+, url: (https?://.+)",
+          "uriFormat": "%s",
+          "action": "debugWithChrome",
+        }
+      },
+    ]
+}
