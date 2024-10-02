@@ -10,7 +10,6 @@ import { Toaster } from "@/components/ui/toaster";
 import { SiteConfig } from "@/lib/constant";
 import { fonts } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
-import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: {
@@ -61,10 +60,7 @@ const RootLayout = ({children}: PropsWithChildren) => {
               <Navbar />
             </Suspense>
             <div className="flex grow flex-col">
-              <main className="grow">
-              {children}
-              <Analytics />
-              </main>
+              <main className="grow">{children}</main>
               <SideBar />
               <div className="relative bottom-0 mt-auto">
                 <Footer />
