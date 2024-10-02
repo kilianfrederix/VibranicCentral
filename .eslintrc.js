@@ -31,7 +31,7 @@ module.exports = {
   settings: {
     tailwindcss: {
       callees: ['cn'],
-      config: 'tailwind.config.js',
+      config: 'tailwind.config.ts',
     },
   },
 };
