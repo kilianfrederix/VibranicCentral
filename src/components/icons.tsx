@@ -34,6 +34,7 @@ export const Icons = {
   VibeLink: CreditCard,
   Eventure: FileCode,
   RecipeRiot: UserSearch,
+  DesignNest: User,
   user: User,
   Notification: Notifications,
   dashboard: Dashboard,

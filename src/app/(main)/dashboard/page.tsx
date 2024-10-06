@@ -31,9 +31,9 @@ export default function Dashboard() {
   const translator = new Translator(isClient, locale, 'home');
   const t = translator.translate.bind(translator);
   return (
-    <section className="container top-20 mt-6 flex flex-col items-center gap-3 text-center md:absolute md:left-1/2 md:mt-4 md:-translate-x-1/2 lg:pl-20 xl:pl-0">
+    <section className="container ml-8 top-10 flex flex-col items-center gap-4 text-center md:absolute md:left-1/2 md:mt-4 md:-translate-x-1/2 lg:pl-20 xl:pl-0">
       <h1 className="hidden text-3xl font-bold tracking-tighter md:block">
-        <span className="underline-bg-blue">Hi, Welcome back!</span>
+        <span className="underline-bg-blue">Vibranic Central Apps</span>
       </h1>
       <div className="mt-6 grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-x-4">
         {apps.map((app, index) => (

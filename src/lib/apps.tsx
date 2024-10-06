@@ -83,5 +83,14 @@ export const useApps = (): App[] => {
       },
       icon: Icons.RecipeRiot,
     },
+    {
+      title: t('DesignNest', 'DesignNest'),
+      link: '/apps/designnest',
+      internal: false,
+      description: { 
+        __html: t('description', 'DesignNest') 
+      },
+      icon: Icons.DesignNest,
+    },
   ]
 }

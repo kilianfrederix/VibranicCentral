@@ -2,10 +2,10 @@
 
 import React from "react";
 
-export default function RecipeRiotApp() {
+export default function DesignNestApp() {
   return (
     <div>
-      <h1>RecipeRiot</h1>
+      <h1>DesignNest</h1>
     </div>
   );
 }

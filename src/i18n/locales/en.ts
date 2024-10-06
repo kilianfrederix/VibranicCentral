@@ -1,4 +1,4 @@
-import { BudgetWise, FocusFlow, CleanCrew, VibeLink, Eventure, RecipeRiot, Common, Errors, Home, languageJson, Archive, Dashboard } from './interface'
+import type { Archive, BudgetWise, CleanCrew, Common, Dashboard,DesignNest, Errors, Eventure, FocusFlow, Home, languageJson, RecipeRiot, VibeLink } from './interface'
 
 const common: Common = {
   actions: 'Actions',
@@ -90,6 +90,10 @@ const RecipeRiot: RecipeRiot = {
   RecipeRiot: 'Recipe Riot',
 };
 
+const DesignNest: DesignNest = {
+  DesignNest: 'Design Nest',
+}
+
 const errors: Errors = {
   error: 'Error',
   notFound: 'Not found',
@@ -113,6 +117,7 @@ const en: languageJson = {
   VibeLink: VibeLink,
   Eventure: Eventure,
   RecipeRiot: RecipeRiot,
+  DesignNest: DesignNest,
   errors: errors,
   archive: archive,
 };

@@ -8,6 +8,7 @@ export interface languageJson {
   VibeLink: VibeLink;
   Eventure: Eventure;
   RecipeRiot: RecipeRiot;
+  DesignNest: DesignNest;
   errors: Errors;
   archive: Archive;
 }
@@ -104,6 +105,10 @@ export interface Eventure {
 
 export interface RecipeRiot {
   RecipeRiot: string;
+}
+
+export interface DesignNest {
+  DesignNest: string;
 }
 
 export interface Archive {
