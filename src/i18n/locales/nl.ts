@@ -1,4 +1,4 @@
-import { BudgetWise, FocusFlow, CleanCrew, VibeLink, Eventure, RecipeRiot, DesignNest, Common, Errors, Home, languageJson, Archive, Dashboard } from './interface'
+import type { Archive, BudgetWise, CleanCrew, Common, Dashboard,DesignNest, Errors, Eventure, FocusFlow, Home, languageJson, RecipeRiot, VibeLink } from './interface'
 
 const common: Common = {
   actions: 'Acties',
